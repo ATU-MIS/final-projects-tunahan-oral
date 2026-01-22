@@ -1,51 +1,35 @@
-# 💎 FinTrack Pro Elite | Personal Financial Decision Support System
+💰 FinTrack Pro - Personal Financial Management System
+FinTrack Pro is a desktop-based financial tracking application developed as a final project for the Software Engineering course. It allows users to record daily expenses, set financial savings goals, and track their progress through interactive charts.
 
-FinTrack Pro is a high-end, full-stack financial management application developed as a final project. It is designed to help users track their financial goals, manage daily transactions, and receive AI-driven advice through a Virtual Financial Advisor engine.
+This project is built with Python and Streamlit, designed to run locally without requiring complex installation steps.
 
-## 🌟 Key Features
+🎯 Key Features
+Dashboard: A visual summary of total savings and financial goals using Plotly charts.
+Virtual Advisor: A built-in algorithm that calculates the necessary monthly savings to reach specific financial targets.
+Expense Tracking: Simple module to record daily expenses by category (e.g., Food, Transport).
+Data Persistence: All user data is securely stored locally in a proje_final.db (SQLite) file.
+🛠️ Tech Stack
+The project follows the architecture defined in the UML diagrams and Requirements Analysis (SRS) document:
 
--   **Strategic Executive Dashboard:** Interactive data visualization using Plotly to track goal achievement rates and net assets.
--   **Virtual Financial Advisor:** An OOP-based decision engine that analyzes income/expense ratios to provide feasibility reports.
--   **Expense & Income Ledger:** A structured tracking module to record and categorize financial movements.
--   **Algorithmic Reporting:** Generation of "Financial Health Scores" and spending distribution analysis through advanced analytics.
--   **Data Persistence:** Integrated SQLite database layer ensuring all user data is stored securely and locally.
+Language: Python 3.10+
+UI Framework: Streamlit (Running in "App Mode" for a desktop-like experience)
+Database: SQLite (Chosen for its portability and zero-configuration)
+Visualization: Plotly & Pandas
+🚀 Installation & Usage
+To run the project on your local machine, follow these steps:
 
-## 🏗️ Technical Architecture (UML Compliance)
+Install Dependencies:
 
-The software is built on a layered architecture, strictly adhering to the provided UML Design Documents:
+pip install -r requirements.txt
+Run the Application:
 
-1.  **Domain Layer (OOP):** Implementation of `User`, `FinancialGoal`, `Transaction`, and `Advisor` classes to manage business logic.
-2.  **Data Layer:** Relational database management using SQLite for persistence.
-3.  **UI Layer:** Modern, responsive frontend built with Streamlit and CSS-injection for an elite user experience.
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Python 3.8 or higher
-- Pip (Python Package Manager)
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ATU-MIS/se-projects1-tunahan-oral.git
-2. Install the required engineering libraries:
-   
-   pip install streamlit pandas plotly
-
-3. Launch the application:
-   python -m streamlit run main.py
+python run_app.py
+(Note: The application will launch in a dedicated window without browser tabs, thanks to the custom launcher script.)
 
 📂 Project Structure
-├── main.py              # Full-stack Application Logic
-├── proje_final.db       # Relational SQLite Database (Auto-generated)
-├── README.md            # Project Documentation
-├── requirements.txt     # Dependency List
-├── FinTrack_Baslatici.bat # One-click Launcher
-└── docs/                # SRS Documents and UML Diagrams
-
-
-Developer: Tunahan Oral
-
-Course: Software Engineering / Final Project
-
-Status: Version 1.0 (Stable)
+main.py: The core application logic and UI code.
+run_app.py: A script to launch the Streamlit app as a standalone desktop window.
+proje_final.db: Local SQLite database file.
+requirements.txt: List of required Python libraries.
+docs/: Contains project documentation (SRS Report and Usability Test Results).
+Developer: Tunahan Oral Course: Software Engineering / Final Project Student ID: 2220202043
